@@ -1,0 +1,122 @@
+{
+    "version": "2.8.7",
+    "nodes": [
+        {
+            "nodeId": 0,
+            "nodeName": "PAGAMENTI",
+            "nodeType": "group",
+            "groupType": "menuTitle",
+            "status": "ACTIVE",
+            "startValidityTs": 1527066836000,
+            "endValidityTs": 1727066836000,
+            "nodes": [
+                {
+                    "nodeId": 2,
+                    "nodeName": "Biglietteria",
+                    "nodeType": "group",
+                    "groupType": "menuRow",
+                    "status": "ACTIVE",
+                    "startValidityTs": 1527066836000,
+                    "endValidityTs": 1727066836000,
+                    "nodes": [
+                        {
+                            "nodeId": 0,
+                            "nodeName": "TRENITALIA MENÙ",
+                            "nodeType": "group",
+                            "groupType": "tabGroup",
+                            "status": "ACTIVE",
+                            "startValidityTs": 1527066836000,
+                            "endValidityTs": 1727066836000,
+                            "resource": {
+                                "id": 12298,
+                                "type": "image",
+                                "version": "1.1.0"
+                            },
+                            "nodes": [
+                                {
+                                    "nodeId": 213,
+                                    "nodeName": "EMISSIONI",
+                                    "nodeType": "service",
+                                    "flowType": "PRIMARY",
+                                    "status": "ACTIVE",
+                                    "startValidityTs": 1527066836000,
+                                    "endValidityTs": 1727066836000,
+                                    "tag": "TRENITALIA",
+                                    "resource": {
+                                        "id": 13439,
+                                        "type": "image",
+                                        "version": "1.1.0"
+                                    }
+                                },
+                                {
+                                    "nodeId": 244,
+                                    "nodeName": "ANNULLO",
+                                    "nodeType": "service",
+                                    "flowType": "PRIMARY",
+                                    "status": "ACTIVE",
+                                    "startValidityTs": 1527066836000,
+                                    "endValidityTs": 1727066836000,
+                                    "tag": "TRENITALIA"
+                                },
+								{
+									"nodeId": 2,
+									"nodeName": "Biglietteria",
+									"nodeType": "group",
+									"groupType": "menuRow",
+									"status": "ACTIVE",
+									"startValidityTs": 1527066836000,
+									"endValidityTs": 1727066836000,
+									"nodes": [
+										{
+											"nodeId": 2,
+											"nodeName": "Biglietteria",
+											"nodeType": "group",
+											"groupType": "menuRow",
+											"status": "ACTIVE",
+											"startValidityTs": 1527066836000,
+											"endValidityTs": 1727066836000,
+											"nodes": [
+												{
+													"nodeId": 2,
+													"nodeName": "Biglietteria",
+													"nodeType": "group",
+													"groupType": "menuRow",
+													"status": "ACTIVE",
+													"startValidityTs": 1527066836000,
+													"endValidityTs": 1727066836000,
+													"nodes": [
+														{
+															"nodeId": 2,
+															"nodeName": "Biglietteria",
+															"nodeType": "group",
+															"groupType": "menuRow",
+															"status": "ACTIVE",
+															"startValidityTs": 1527066836000,
+															"endValidityTs": 1727066836000,
+															"nodes": [
+																{ 
+																	"nodeId": 244,
+																	"nodeName": "ANNULLO",
+																	"nodeType": "service",
+																	"flowType": "PRIMARY",
+																	"status": "ACTIVE",
+																	"startValidityTs": 1527066836000,
+																	"endValidityTs": 1727066836000,
+																	"tag": "TRENITALIA"
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
