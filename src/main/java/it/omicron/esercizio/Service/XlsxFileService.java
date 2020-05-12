@@ -30,20 +30,14 @@ public class XlsxFileService {
 		this.sheet = this.workbook.createSheet(nameSheet);
 		this.level = 0;
 		this.rowsNumber = 1;
-		try {
-			this.fileOut = new FileOutputStream(this.path);
-		} catch (FileNotFoundException e) {
-			System.out.println(e.getMessage());
-		}
 	}
 
 	public void createHeader(String[] labels) {
 		Row header = this.sheet.createRow(0);
-		CellStyle headerStyle = this.workbook.createCellStyle(); //header.getRowStyle();
+		CellStyle headerStyle = this.workbook.createCellStyle();
 
 		Font font = this.workbook.createFont();
 		font.setBold(true);
-		//font.setBoldweight(true);
 		headerStyle.setFont(font);
 
 		int index = 0;
@@ -58,7 +52,11 @@ public class XlsxFileService {
 
 	public void writeIntoXlsx() {
 		try {
+			this.fileOut = new FileOutputStream(this.path);
 			this.workbook.write(this.fileOut);
+			this.fileOut.close();
+		} catch (FileNotFoundException e) {
+			System.out.println(e.getMessage());
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
 		}
@@ -68,8 +66,7 @@ public class XlsxFileService {
 		try {
 			this.setSheetWidth();
 			this.writeIntoXlsx();
-			
-			this.fileOut.close();
+
 			this.workbook.close();
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
@@ -128,10 +125,10 @@ public class XlsxFileService {
 		this.rowsNumber += 1;
 		this.writeIntoXlsx();
 	}
-	
+
 	private void setSheetWidth() {
 		for (int i = 0; i < 13; i++)
 			this.sheet.autoSizeColumn(i);
 	}
-	
+
 }

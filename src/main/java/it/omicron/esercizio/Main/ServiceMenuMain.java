@@ -9,6 +9,8 @@ public class ServiceMenuMain {
 	public static void main(String[] args) {
 		System.out.println("Inizio");
 
+		//String pathInputFile = "C:\\Users\\nicola\\Downloads\\EsercizioServiceMenu\\ServiceMenu\\input\\ServiceMenu.json";
+		//String pathOutputFile = "C:\\Users\\nicola\\Downloads\\EsercizioServiceMenu\\ServiceMenu\\output\\ServiceMenu.xlsx";
 		String pathInputFile = ".\\input\\ServiceMenu.json";
 		String pathOutputFile = ".\\output\\ServiceMenu.xlsx";
 		String[] xlsxFileLabels = new String[] { "0", "1", "2", "3", "4", "5", "6", "ServiceId", "NodeName", "NodeType",
