@@ -4,7 +4,7 @@ import java.util.List;
 
 public class MenuNode {
 
-	private int nodeId; // 0,
+	private Integer nodeId; // 0,
 	private String nodeName; // RICARICHE,
 	private String nodeType; // group,
 	private String groupType; // menuTitle,
@@ -20,11 +20,11 @@ public class MenuNode {
 		super();
 	}
 
-	public int getNodeId() {
+	public Integer getNodeId() {
 		return nodeId;
 	}
 
-	public void setNodeId(int nodeId) {
+	public void setNodeId(Integer nodeId) {
 		this.nodeId = nodeId;
 	}
 

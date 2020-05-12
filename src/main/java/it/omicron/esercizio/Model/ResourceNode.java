@@ -2,7 +2,7 @@ package it.omicron.esercizio.Model;
 
 public class ResourceNode {
 
-	private int id; // 12244,
+	private Integer id; // 12244,
 	private String type; // image,
 	private String version; // 1.0.0
 	
@@ -10,10 +10,10 @@ public class ResourceNode {
         super();
     }
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public String getType() {
