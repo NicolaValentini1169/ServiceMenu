@@ -1,6 +1,5 @@
 package it.omicron.esercizio.Service;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
@@ -85,7 +84,7 @@ public class LucaXlsxFileService {
 			writeIntoXlsx();
 			workbook.close();
 		} catch (IOException e) {
-			System.out.println(e.getMessage());
+			System.out.println("Errore LucaXlsxFileService " + e.getMessage());
 		}
 	}
 	
@@ -94,10 +93,8 @@ public class LucaXlsxFileService {
 			fileOut = new FileOutputStream(path);
 			workbook.write(fileOut);
 			fileOut.close();
-		} catch (FileNotFoundException e) {
-			System.out.println(e.getMessage());
 		} catch (IOException e) {
-			System.out.println(e.getMessage());
+			System.out.println("Errore LucaXlsxFileService " + e.getMessage());
 		}
 	}
 	

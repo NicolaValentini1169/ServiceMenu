@@ -1,6 +1,5 @@
 package it.omicron.esercizio.Service;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
@@ -91,10 +90,8 @@ public class XlsxFileService {
 			this.fileOut = new FileOutputStream(this.path);
 			this.workbook.write(this.fileOut);
 			this.fileOut.close();
-		} catch (FileNotFoundException e) {
-			System.out.println(e.getMessage());
 		} catch (IOException e) {
-			System.out.println(e.getMessage());
+			System.out.println("Errore XlsxFileService " + e.getMessage());
 		}
 	}
 
@@ -104,7 +101,7 @@ public class XlsxFileService {
 			this.writeIntegeroXlsx();
 			this.workbook.close();
 		} catch (IOException e) {
-			System.out.println(e.getMessage());
+			System.out.println("Errore XlsxFileService " + e.getMessage());
 		}
 	}
 

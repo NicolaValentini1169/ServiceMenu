@@ -1,7 +1,6 @@
 package it.omicron.esercizio.Service;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -27,10 +26,8 @@ public class JsonFileService {
 			
 			bufferedReader.close();
 			return menuContent;
-		} catch (FileNotFoundException e) {
-			System.out.println(e.getMessage());
 		} catch (IOException e) {
-			System.out.println(e.getMessage());
+			System.out.println("Errore JsonFileService " + e.getMessage());
 		}
 		return null;
 	}
