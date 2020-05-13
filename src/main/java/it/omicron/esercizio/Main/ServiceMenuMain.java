@@ -12,14 +12,14 @@ public class ServiceMenuMain {
 
 		PropertiesFileService pfs = new PropertiesFileService();
 
-		/*JsonFileService jsonFileService = new JsonFileService(pfs.getPathInputFile());
+		JsonFileService jsonFileService = new JsonFileService(pfs.getPathInputFile());
 		MenuContent menuContent = jsonFileService.readFromJson();
 
 		if (menuContent != null) {
 			LucaXlsxFileService xlsxFileService = new LucaXlsxFileService(pfs.getPathOutputFile(), menuContent);
 			xlsxFileService.createFile();
 		}
-*/
+
 		System.out.println("Fine");
 	}
 }

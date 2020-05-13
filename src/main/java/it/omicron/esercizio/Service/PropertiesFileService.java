@@ -30,9 +30,6 @@ public class PropertiesFileService {
 			pathInputFile = checkPath(prop.getProperty("pathInputDirectory"), prop.getProperty("nameInputFile"), false);
 			pathOutputFile = checkPath(prop.getProperty("pathOutputDirectory"), prop.getProperty("nameOutputFile"),
 					true);
-
-			System.out.println("pathInputFile " + pathInputFile);
-			System.out.println("pathOutputFile " + pathOutputFile);
 		} catch (FileNotFoundException e) {
 			System.out.println("Errore PropertiesFileService. " + e.getMessage());
 		} catch (InvalidPathException e) {
